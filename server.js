@@ -4,15 +4,14 @@ const bodyParser = require('body-parser');
 const passport = require('passport');
 
 
+// 引入users.js
+const users = require('./routes/api/users');
 
 
 const app = express();
-app.get('/', function (req, res) {
-    res.json({
-        status: 'success',
-        msg: "OK"
-    })
-})
+
+// 使用routes
+app.use('/api/users', users);
 
 
 //区环境变量，如果么有那就是5001
