@@ -10,9 +10,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.18.0",
+    "babel-preset-es2015": "^6.24.1",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "mongoose": "^5.4.17",
     "passport": "^0.4.0"
+  },
+  "devDependencies": {
+    "babel-plugin-component": "^1.1.1"
   }
 }
